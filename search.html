@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="search.css">
+    <title>Movie Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="nav-container">
+            <div id="left-element">
+                <div></div>
+                <div id="nav-logo">
+                    <a href="index.html" class="">
+                        <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+                            alt="" /></a>
+                </div>
+
+                <div id="navigations">
+                    <ul>
+                        <a href="">
+                            <li>Movies</li>
+                        </a>
+                        <a href="">
+                            <li>Sports</li>
+                        </a>
+                        <a href="">
+                            <li>Disney+</li>
+                        </a>
+                        <a href="trending.html">
+                            <li>Trending Movies</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-element">
+                <div class="search-container">
+                    <input oninput="debounce(getMovies,1000)" type="text" id="query" placeholder="Search" />
+                    <!-- <button onclick="getMovies()"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                    <button id="sub">SUBSCRIBE</button>
+                    <button id="login"><a href="signup.html">Login</a></button>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div id="slideshow">
+
+    </div>
+    <div id="movies">
+
+        <!-- <img  id="loader" src="https://i.gifer.com/origin/b4/b4d657e7ef262b88eb5f7ac021edda87.gif" alt=""> -->
+
+    </div>
+</body>
+
+</html>
+<script src="search.js"></script>
